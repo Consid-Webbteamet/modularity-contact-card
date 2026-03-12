@@ -1,0 +1,88 @@
+{
+    "key": "group_modularity_contact_card_settings",
+    "title": "Kontaktkort",
+    "fields": [
+        {
+            "key": "field_contact_card_editor_info",
+            "label": "Instruktion",
+            "name": "",
+            "type": "message",
+            "message": "Valj ett kontaktkort. Modulens innehall hamtas fran kontaktkortets rubrik och brodtext.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_contact_card_panel_title",
+            "label": "Titel",
+            "name": "panel_title",
+            "type": "text",
+            "required": 0,
+            "instructions": "Rubriken som visas overst i kontaktytan, till exempel \"Kontakt\".",
+            "default_value": "Kontakt",
+            "placeholder": "Kontakt"
+        },
+        {
+            "key": "field_contact_card_selected_post",
+            "label": "Kontaktkort",
+            "name": "contact_card",
+            "type": "post_object",
+            "required": 1,
+            "post_type": [
+                "kontaktkort"
+            ],
+            "taxonomy": "",
+            "return_format": "id",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 1
+        },
+        {
+            "key": "field_contact_card_background_color",
+            "label": "Bakgrundsfarg",
+            "name": "background_color",
+            "type": "select",
+            "required": 1,
+            "choices": {
+                "blue": "Bla",
+                "green": "Gron",
+                "orange": "Orange",
+                "purple": "Lila",
+                "red": "Rod",
+                "teal": "Turkos",
+                "yellow": "Gul"
+            },
+            "default_value": "red",
+            "return_format": "value",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "mod-contact-card"
+            }
+        ],
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/contact-card"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}
