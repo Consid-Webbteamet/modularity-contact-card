@@ -18,8 +18,7 @@
             "type": "text",
             "required": 0,
             "instructions": "Rubriken som visas overst i kontaktytan, till exempel \"Kontakt\".",
-            "default_value": "Kontakt",
-            "placeholder": "Kontakt"
+            "default_value": "Kontakt"
         },
         {
             "key": "field_contact_card_selected_post",

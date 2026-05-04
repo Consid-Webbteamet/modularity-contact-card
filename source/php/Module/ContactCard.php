@@ -28,7 +28,7 @@ class ContactCard extends \Modularity\Module
         $fields = $this->getFields();
         $contact = $this->normalizeContact($fields['contact_card'] ?? 0);
         $color = $this->normalizeColor($fields['background_color'] ?? 'red');
-        $panelTitle = $this->normalizePanelTitle($fields['panel_title'] ?? __('Kontakt', 'modularity-contact-card'));
+        $panelTitle = $this->normalizePanelTitle($fields['panel_title'] ?? '');
 
         return [
             'contact' => $contact,
@@ -100,8 +100,6 @@ class ContactCard extends \Modularity\Module
      */
     private function normalizePanelTitle($panelTitle): string
     {
-        $panelTitle = is_string($panelTitle) ? trim($panelTitle) : '';
-
-        return $panelTitle !== '' ? $panelTitle : __('Kontakt', 'modularity-contact-card');
+        return is_string($panelTitle) ? trim($panelTitle) : '';
     }
 }

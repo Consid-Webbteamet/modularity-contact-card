@@ -27,7 +27,6 @@ acf_add_local_field_group([
             'required' => 0,
             'instructions' => __('Rubriken som visas överst i kontaktytan, till exempel "Kontakt".', 'modularity-contact-card'),
             'default_value' => __('Kontakt', 'modularity-contact-card'),
-            'placeholder' => __('Kontakt', 'modularity-contact-card'),
         ],
         [
             'key' => 'field_contact_card_selected_post',
