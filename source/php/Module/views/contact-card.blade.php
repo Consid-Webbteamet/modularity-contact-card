@@ -5,7 +5,7 @@
         @endif
 
         @if (!empty($contact['preamble']))
-            <p class="contact-card-panel__preamble preamble">{{ $contact['preamble'] }}</p>
+            <h3 class="contact-card-panel__preamble preamble">{{ $contact['preamble'] }}</h3>
         @endif
 
         @if (!empty($contact['content']))
